@@ -8,20 +8,12 @@
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
     background-color: var(--background_white);
-}
-
-/* hele index er inde i denne container, bortset fra footer. Dette er for at få footeren til at flytte sig ned, uanset højden på denne container */
-#page-container {
-    position: relative;
-    min-height: 100%;
-}
-
-/* højde på footer */
-#content-wrap{
-    padding-bottom: 10rem;
 }
 
 h1{
@@ -58,11 +50,8 @@ height: auto;
 
 
 footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    background-color: var(--dark_blue);
+    min-height: 50px;
+   background-color: var(--dark_blue);
     color: var(--background_white);
 }
 
