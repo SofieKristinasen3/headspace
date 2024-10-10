@@ -50,6 +50,13 @@ p{
     color: var(--our_black);
 }
 
+header img{
+width: 50%;
+height: auto;
+}
+
+
+
 footer{
     position: absolute;
     bottom: 0;
