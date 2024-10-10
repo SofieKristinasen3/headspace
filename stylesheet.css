@@ -42,22 +42,32 @@ p{
     color: var(--our_black);
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 header img{
 width: 50%;
 height: auto;
+}
+
+nav{
+    padding: 10;
 }
 
 
 
 footer{
     min-height: 50px;
-   background-color: var(--dark_blue);
+    padding: 5%;
+    background-color: var(--dark_blue);
     color: var(--background_white);
 }
 
 footer p{
     margin-bottom: 0px;
-    padding: 0px 5%;
     color: var(--background_white);
 }
 
