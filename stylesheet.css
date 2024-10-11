@@ -5,6 +5,7 @@
  --light_blue: #6CAABB;
  --medium_blue: #077C9C;
  --dark_blue: #054657; 
+ --mobile_padding: 5%;
 }
 
 body{
@@ -54,10 +55,37 @@ height: auto;
 }
 
 nav{
-    padding: 10;
+    padding: var(--mobile_padding);
 }
 
+#quiz{
+    height: 100%;
+    padding: var(--mobile_padding);
+    background-image: url(img/coverpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(25%);
+}
 
+#introduction{
+    padding: var(--mobile_padding);
+}
+
+#quotes{
+    padding: var(--mobile_padding);
+}
+
+#gallery{
+    padding: var(--mobile_padding);
+}
+
+#events{
+    padding: var(--mobile_padding);
+}
+
+#txt_slider{
+    padding: var(--mobile_padding);
+}
 
 footer{
     min-height: 50px;
