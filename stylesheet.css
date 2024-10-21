@@ -164,6 +164,12 @@ font-weight: 500;
     padding: var(--mobile_padding);
 }
 
+/*Skal du være med gallery med billeder */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #events{
     padding: var(--mobile_padding);
 }
