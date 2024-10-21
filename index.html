@@ -38,22 +38,27 @@
             height="40px"
           >
             <path
-              stroke-linecap="round"
+               stroke-linecap="round" -->
               stroke-linejoin="round"
               d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
             />
           </svg>
         </a>
+<button>Bliv Frivillig!</button>
 
-        <button>Bliv Frivillig!</button>
       </nav>
     </header>
 
     <section id="hero">
+      <div>
+        <img src="img/coverpic.jpg" alt="">
+        <h1>Opdag din måde at være frivillig på!</h1>
+        <button id="quiz_button">Tag quizzen</button>
+      </div>
+
       <div id="quiz">
-        <div id="quiz_caption">
-          <h1>Opdag din måde at være frivillig på</h1>
-        </div>
+        <div id="question"></div>
+        <div id="answers"></div>
       </div>
     </section>
 
@@ -70,8 +75,8 @@
 
     <section id="quotes">
       <h3>
-        Headspace har virkelig givet mig modet tilbage, har fået de bedste
-        venner der
+        " Headspace har virkelig givet mig modet tilbage, har fået de bedste
+        venner der "
       </h3>
     </section>
 
@@ -128,5 +133,6 @@
         </a>
       </div>
     </footer>
+    <script src="quiz.js"></script>
   </body>
 </html>
