@@ -15,19 +15,27 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--background_white);
+    font-family: abel;
+    box-sizing: border-box;
 }
 
 h1{
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     color: var(--our_black);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
 }
 
 h2{
     font-family: gabarito, sans-serif;
     font-weight: 600;
     color: var(--dark_blue);
+    font-size: 24px;
 
 }
 
@@ -45,8 +53,9 @@ p{
 
 header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
 }
 
 header img{
@@ -54,17 +63,92 @@ width: 50%;
 height: auto;
 }
 
+header a{
+    display: none;
+    color: var(--our_black);
+    text-decoration: none;
+    font-family: abel;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+button{
+    border: none;
+    background-color: var(--medium_blue);
+    height: 50px;
+    width: auto;
+    color: var(--background_white);
+    font-family: abel;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0px var(--mobile_padding);
+}
+
+button :hover{
+    background-color: var(--light_blue);
+    color: var(--our_black);
+}
+
 nav{
     padding: var(--mobile_padding);
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+}
+
+#calendar_icon{
+    display: none;
+}
+
+#hero{
+    position: relative;
+}
+
+#hero img{
+    width: 100%;
+    height: auto;
+    opacity: 40%;
+}
+
+#quiz_button{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: var(--mobile_padding);
 }
 
 #quiz{
     height: 100%;
     padding: var(--mobile_padding);
-    background-image: url(img/coverpic.jpg);
+    /* background-image: url(img/coverpic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(25%);
+    filter: opacity(25%); */
+}
+
+#answers button{
+background-color: var(--background_white);
+border: 3px solid var(--medium_blue);
+color: var(--our_black);
+font-weight: 500;
+}
+
+#answers{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--mobile_padding);
+}
+
+#question{
+    padding: var(--mobile_padding) 0px;
+    font-family: gabarito, sans-serif;
+    font-weight: 600;
+    color: var(--dark_blue);
+    font-size: 24px;
 }
 
 #introduction{
@@ -73,6 +157,7 @@ nav{
 
 #quotes{
     padding: var(--mobile_padding);
+    background-color: var(--dark_blue);
 }
 
 #gallery{
@@ -101,4 +186,31 @@ footer p{
 
 footer a{
     color: var(--background_white);
+}
+
+@media screen and (min-width: 1000px){
+    header img{
+        width: 20%;
+        height: auto;
+        object-fit: scale-down;
+    }
+
+    #calendar_icon{
+        display: block;
+
+    }
+
+    header a{
+        display: block;
+    }
+
+    nav {
+        width: 25%;
+        justify-content: center;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    
 }
