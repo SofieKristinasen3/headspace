@@ -163,8 +163,8 @@ font-weight: 500;
 #gallery{
     padding: var(--mobile_padding);
 }
-/*Skal du være med gallery med billeder */
-.gallery-images {
+/*Skal du være med slideshow med billeder */
+.slideshow {
     display: flex;
     flex-wrap: wrap;
 }
