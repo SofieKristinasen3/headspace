@@ -44,20 +44,42 @@
             />
           </svg>
         </a>
-<button>Bliv Frivillig!</button>
+<button id="openModalBtn">Bliv Frivillig!</button>
 
       </nav>
     </header>
 
-    <section id="hero">
-      <div id="hero_cover">
-        <div id="hero_content">
-          <img src="img/coverpic.jpg" alt="">
-          <h1>Opdag din måde at være frivillig på!</h1>
-          <button id="quiz_button" onclick="startQuiz()">Tag quizzen</button>
-        </div>
+     <!-- Tilmeldings Popup -->
+     <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Tilmeld dig som frivillig</h2>
+          <form id="signupForm">
+              <label for="fname">Fornavn:</label>
+              <input type="text" id="fname" name="firstname" placeholder="Dit fornavn">
+
+              <label for="lname">Efternavn:</label>
+              <input type="text" id="lname" name="lastname" placeholder="Dit efternavn">
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Din email">
+
+              <label for="volunteer">Valg af frivilligt arbejde:</label>
+              <select id="volunteer" name="volunteer">
+              </select>
+
+              <button type="button" class="submit-btn" onclick="submitForm()">Tilmeld</button>
+          </form>
       </div>
-      
+  </div>
+
+    <section id="hero">
+      <div>
+        <img src="img/coverpic.jpg" alt="">
+        <h1>Opdag din måde at være frivillig på!</h1>
+        <button id="quiz_button">Tag quizzen</button>
+      </div>
+
       <div id="quiz">
         <div id="question"></div>
         <div id="answers"></div>
@@ -86,14 +108,13 @@
       <h2>Skal du være med?</h2>
     </section>
     <hr />
-
-  <!-- selve galleri billederne og link til javascripten -->
+      <!-- selve galleri billederne og link til javascripten -->
   <div class="gallery-images">
-  <img src="img/arrow_back.svg" id="backBtn" />
-  <script src="gallery.js"></script>
-  <img src="img/hs-buckethat-girls.png" alt="">
-  <img src="img/arrow_forward.svg" alt="forwardBtn">
-  </div>
+    <img src="img/arrow_back.svg" id="backBtn" />
+    <script src="gallery.js"></script>
+    <img src="img/hs-buckethat-girls.png" alt="">
+    <img src="img/arrow_forward.svg" alt="forwardBtn">
+    </div>
 
     <section id="events">
       <h2>Eventkalender</h2>
@@ -150,5 +171,6 @@
       </div>
     </footer>
     <script src="quiz.js"></script>
+    <script src="tilmeldingsformular.js"></script>
   </body>
 </html>

@@ -24,6 +24,10 @@ h1{
     font-weight: 700;
     font-size: 24px;
     color: var(--our_black);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    text-align: center;
     transform: translate(-50%);
 }
 
@@ -50,14 +54,14 @@ p{
 header{
     display: flex;
     align-items: center;
-    height: 100px;
+    position: sticky;
+
 }
 
 header img{
-min-width: 20%;
-max-width: 50%;
+width: 50%;
+height: auto;
 }
-
 
 header a{
     display: none;
@@ -102,39 +106,34 @@ nav{
     position: relative;
 }
 
-#hero_cover{
-    display: block;
-    display: grid;
-    
-}
-
 #hero img{
     width: 100%;
     height: auto;
     opacity: 40%;
-
 }
 
 #quiz_button{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: var(--mobile_padding);
 }
 
 #quiz{
+    height: 100%;
     padding: var(--mobile_padding);
-    position: absolute;
-    top: 0px;
-    display: none;
+    /* background-image: url(img/coverpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(25%); */
 }
 
 #answers button{
 background-color: var(--background_white);
-border: 2px solid var(--medium_blue);
+border: 3px solid var(--medium_blue);
 color: var(--our_black);
-font-weight: 700;
-}
-
-#answers button:hover{
-    border-width: 4px;
+font-weight: 500;
 }
 
 #answers{
@@ -164,13 +163,11 @@ font-weight: 700;
 #gallery{
     padding: var(--mobile_padding);
 }
-
 /*Skal du være med gallery med billeder */
 .gallery-images {
     display: flex;
     flex-wrap: wrap;
 }
-
 #events{
     padding: var(--mobile_padding);
 }
@@ -194,9 +191,6 @@ footer p{
 footer a{
     color: var(--background_white);
 }
-
-
-
 /* tablet version */
 @media  screen and (min-width: 600px){
     h1{
@@ -209,10 +203,7 @@ footer a{
     }
     
 }
-
-/* computer version */
 @media screen and (min-width: 1000px){
-
     header img{
         width: 20%;
         height: auto;
@@ -236,13 +227,69 @@ footer a{
     header{
         justify-content: space-between;
     }
-
+    
     h1{
         font-size: 64px;
     }
 
     :root{
         --mobile_padding: 10%;
-       }
-    
+}
+/* tilmeldingsformular */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #F9F9F9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.close {
+    color: #077C9C;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #054657;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline-color: #077C9C;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    background-color: #077C9C;
+    color: #F9F9F9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #054657;
+}
 }
