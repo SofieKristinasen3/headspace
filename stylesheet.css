@@ -191,6 +191,65 @@ footer p{
 footer a{
     color: var(--background_white);
 }
+/* tilmeldingsformular */
+.modal {
+    
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: var(--mobile_padding);
+}
+
+.modal-content {
+    background-color: #F9F9F9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.close {
+    color: #077C9C;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #054657;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline-color: #077C9C;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    background-color: #077C9C;
+    color: #F9F9F9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #054657;
+}
 /* tablet version */
 @media  screen and (min-width: 600px){
     h1{
@@ -235,8 +294,7 @@ footer a{
     :root{
         --mobile_padding: 10%;
 }
-/* tilmeldingsformular */
- .modal {
+.modal {
     
     display: none;
     position: fixed;
@@ -256,41 +314,5 @@ footer a{
     width: 300px;
     text-align: left;
     border-radius: 20px;
-}
-
-.close {
-    color: #077C9C;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #054657;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-input[type="text"], input[type="email"], select {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    outline-color: #077C9C;
-    border-radius: 10px;
-}
-
-.submit-btn {
-    background-color: #077C9C;
-    color: #F9F9F9;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.submit-btn:hover {
-    background-color: #054657;
 }
 }
