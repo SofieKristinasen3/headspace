@@ -9,6 +9,11 @@
 // g=e.text;
 // h=e.f[0][0];
 
+function startQuiz() { 
+	document.getElementById("hero_cover").style.display="none"; 
+	document.getElementById("quiz").style.display="block"; 
+}
+
 const quizData = [
     {
       question: "What is the capital of France?",

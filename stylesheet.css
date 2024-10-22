@@ -24,10 +24,6 @@ h1{
     font-weight: 700;
     font-size: 24px;
     color: var(--our_black);
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    text-align: center;
     transform: translate(-50%);
 }
 
@@ -54,14 +50,14 @@ p{
 header{
     display: flex;
     align-items: center;
-    position: sticky;
-
+    height: 100px;
 }
 
 header img{
-width: 50%;
-height: auto;
+min-width: 20%;
+max-width: 50%;
 }
+
 
 header a{
     display: none;
@@ -85,7 +81,7 @@ button{
     padding: 0px var(--mobile_padding);
 }
 
-button :hover{
+button:hover{
     background-color: var(--light_blue);
     color: var(--our_black);
 }
@@ -106,34 +102,39 @@ nav{
     position: relative;
 }
 
+#hero_cover{
+    display: block;
+    display: grid;
+    
+}
+
 #hero img{
     width: 100%;
     height: auto;
     opacity: 40%;
+
 }
 
 #quiz_button{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: var(--mobile_padding);
 }
 
 #quiz{
-    height: 100%;
     padding: var(--mobile_padding);
-    /* background-image: url(img/coverpic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(25%); */
+    position: absolute;
+    top: 0px;
+    display: none;
 }
 
 #answers button{
 background-color: var(--background_white);
-border: 3px solid var(--medium_blue);
+border: 2px solid var(--medium_blue);
 color: var(--our_black);
-font-weight: 500;
+font-weight: 700;
+}
+
+#answers button:hover{
+    border-width: 4px;
 }
 
 #answers{
@@ -188,7 +189,24 @@ footer a{
     color: var(--background_white);
 }
 
+
+
+/* tablet version */
+@media  screen and (min-width: 600px){
+    h1{
+        top: 20%;
+        font-size: 40px;
+    }
+
+    #quiz_button{
+        top: 45%;
+    }
+    
+}
+
+/* computer version */
 @media screen and (min-width: 1000px){
+
     header img{
         width: 20%;
         height: auto;
@@ -212,5 +230,13 @@ footer a{
     header{
         justify-content: space-between;
     }
+
+    h1{
+        font-size: 64px;
+    }
+
+    :root{
+        --mobile_padding: 10%;
+       }
     
 }
