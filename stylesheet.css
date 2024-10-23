@@ -8,10 +8,6 @@
  --mobile_padding: 5%;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     min-height: 100vh;
     display: grid;
@@ -28,9 +24,13 @@ h1{
     font-weight: 700;
     font-size: 24px;
     color: var(--our_black);
+    position: absolute;
+    top: 2%;
+    left: 50%;
     text-align: center;
     padding: var(--mobile_padding);
     margin: 0px;
+    transform: translate(-50%);
 }
 
 h2{
@@ -53,14 +53,6 @@ p{
     color: var(--our_black);
 }
 
-hr {
-    border: 0;
-    display:block;
-    width: 100%;               
-    background-color: var(--dark_blue);
-    height: 1px;
-  }
-
 header{
     display: flex;
     align-items: center;
@@ -70,7 +62,11 @@ header{
 
 header img{
 width: 50%;
-height: auto;
+
+}
+
+nav img{
+height: 100%;
 }
 
 header a{
@@ -103,24 +99,78 @@ button:hover{
 nav{
     padding: var(--mobile_padding);
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: center;
 
 }
 
-#calendar_icon{
+nav ul{ /*nav computer*/
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav li{
+    height: auto;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--our_black);
+}
+
+nav a:hover{
+    color:var( --medium_blue);
+}
+
+nav li:first-child{ /*logo left side*/
+    margin-right: auto;
+}
+
+.sidebar{ /*nav mobile*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 99999;
+    background-color: var(--background_white);
+    box-shadow: -10px 0 10px var(--dark_blue);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+  
+.sidebar li:first-child{
+    margin-left: 65%;
+}
+  
+.sidebar a{
+    width: 100%;
+}
+  
+.menu-but{
     display: none;
 }
 
-#quiz_cover{
-    position: relative;
-    display: inline-block;
+.nav-icon{
+    height: 40px;
 }
 
-#hero_content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#hero{
+    position: relative;
 }
 
 #hero img{
@@ -129,26 +179,22 @@ nav{
     opacity: 40%;
 }
 
-#hero h1{
-    position: absolute;
-    top: 30%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-
 #quiz_button{
-  margin: var(--mobile_padding);
   position: absolute;
-  top: 70%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: var(--mobile_padding);
 }
 
 #quiz{
     height: 100%;
     padding: var(--mobile_padding);
-    }
-
+    /* background-image: url(img/coverpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(25%); */
+}
 
 #answers button{
 background-color: var(--background_white);
@@ -170,7 +216,6 @@ font-weight: 500;
     font-weight: 600;
     color: var(--dark_blue);
     font-size: 24px;
-    text-align: center;
 }
 
 #introduction{
@@ -180,35 +225,6 @@ font-weight: 500;
 #quotes{
     padding: var(--mobile_padding);
     background-color: var(--dark_blue);
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 70px;
-}
-
-.quote-container {
-    color: var(--background_white);
-    font-family: gabarito, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    max-width: 400px;
-    min-height: 100px;
-    margin: 0 60px;
-    flex: 1;
-    transition: opacity 0.7s ease-in-out;
-}
-
-@media (max-width: 600px) {
-    #quotes {
-        flex-direction: column;
-    }
-
-    .quote-container {
-        max-width: 90%;
-        font-size: 18px;
-        margin: auto;
-    }
 }
 
 #gallery{
@@ -219,11 +235,6 @@ font-weight: 500;
     display: flex;
     flex-wrap: wrap;
 }
-
-#slideshow img {
-    border-radius: 20px;
-}
-
 #events{
     padding: var(--mobile_padding);
 }
@@ -265,13 +276,9 @@ footer a{
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
-    max-width: 400px;
+    width: 300px;
     text-align: left;
     border-radius: 20px;
-    margin: 10vh auto;
-    position: relative;
-    z-index: 2;
 }
 
 .close {
@@ -283,35 +290,31 @@ footer a{
 
 .close:hover,
 .close:focus {
-    color: #6CAABB;
+    color: #054657;
     text-decoration: none;
     cursor: pointer;
 }
 
 input[type="text"], input[type="email"], select {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 8px 0;
     box-sizing: border-box;
     outline-color: #077C9C;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 .submit-btn {
     background-color: #077C9C;
     color: #F9F9F9;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    width: 100%;
 }
 
 .submit-btn:hover {
-    background-color: #6CAABB;
-    color: #181A2A;
+    background-color: #054657;
 }
 /* tablet version */
 @media  screen and (min-width: 600px){
@@ -319,9 +322,11 @@ input[type="text"], input[type="email"], select {
         top: 20%;
         font-size: 40px;
     }
-    
-}
 
+    #quiz_button{
+        top: 45%;
+    }
+}
 
 @media screen and (min-width: 1000px){
     :root{
@@ -344,7 +349,7 @@ input[type="text"], input[type="email"], select {
     }
 
     nav {
-        width: 25%;
+        width: 100%;
         justify-content: center;
     }
 
@@ -375,20 +380,29 @@ input[type="text"], input[type="email"], select {
     position: fixed;
     z-index: 1;
     left: -10%;
-    top: -20%;
+    top: -40%;
     width: 100%;
     height: 100%;
 }
 
 .modal-content {
     background-color: #F9F9F9;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
+    width: 300px;
     text-align: left;
     border-radius: 20px;
-    width: 90%;
-    margin: 10vh auto;
-    max-width: 400px;
-    position: relative;
-    z-index: 2;
+}
+
+@media(max-width:600px){
+    .hide-on-mobile{
+      display: none;
+    }
+    .menu-but{
+      display: block;
+    }
+    #calendar_icon{
+        display: none;
+    }
 }
