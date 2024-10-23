@@ -98,23 +98,29 @@
     </section>
 
     <section id="quotes">
-      <h3>
-        " Headspace har virkelig givet mig modet tilbage, har fået de bedste
-        venner der "
-      </h3>
+      <!--qoutes findes i javascripten-->
+      <div id="quote-1" class="quote-container"></div>
+      <div id="quote-2" class="quote-container"></div>
+      <div id="quote-3" class="quote-container"></div>
     </section>
+    <script src="quotes.js"></script>
 
     <section id="gallery">
       <h2>Skal du være med?</h2>
     </section>
     <hr />
       <!-- selve galleri billederne og link til javascripten -->
-  <div class="gallery-images">
-    <img src="img/arrow_back.svg" id="backBtn" />
-    <script src="gallery.js"></script>
-    <img src="img/hs-buckethat-girls.png" alt="">
-    <img src="img/arrow_forward.svg" alt="forwardBtn">
-    </div>
+      <div>
+        <button id=clickLeft onclick="show_image('left')">&lt;</button>
+        <button id=clickRight onclick="show_image('right')">&gt;</button>
+      </div>
+      <script src="gallery.js" defer></script>
+      <div id="slideshow">
+        <img id="left-image" />
+        <img id="main-image" />
+        <img id="right-image" />
+      </div>
+      
 
     <section id="events">
       <h2>Eventkalender</h2>
