@@ -261,6 +261,12 @@ font-weight: 500;
 #gallery{
     padding: var(--mobile_padding);
 }
+/*Skal du være med? slideshow med billeder */
+#slideshow img {
+    border-radius: 20px;
+}
+
+/*event kalender*/
 /*Skal du være med slideshow med billeder */
 .slideshow {
     display: flex;
