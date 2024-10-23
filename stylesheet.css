@@ -282,7 +282,7 @@ footer a{
 
 .close:hover,
 .close:focus {
-    color: #054657;
+    color: #6CAABB;
     text-decoration: none;
     cursor: pointer;
 }
@@ -309,8 +309,8 @@ input[type="text"], input[type="email"], select {
 }
 
 .submit-btn:hover {
-    background-color: #054657;
-    color: #F9F9F9;
+    background-color: #6CAABB;
+    color: #181A2A;
 }
 /* tablet version */
 @media  screen and (min-width: 600px){
