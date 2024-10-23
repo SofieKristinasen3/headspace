@@ -209,9 +209,13 @@ footer a{
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
     text-align: left;
     border-radius: 20px;
+    margin: 10vh auto;
+    position: relative;
+    z-index: 2;
 }
 
 .close {
@@ -230,20 +234,23 @@ footer a{
 
 input[type="text"], input[type="email"], select {
     width: 100%;
-    padding: 12px;
-    margin: 8px 0;
+    padding: 10px;
+    margin: 10px 0;
     box-sizing: border-box;
     outline-color: #077C9C;
     border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 .submit-btn {
     background-color: #077C9C;
     color: #F9F9F9;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    width: 100%;
 }
 
 .submit-btn:hover {
@@ -299,18 +306,21 @@ input[type="text"], input[type="email"], select {
     position: fixed;
     z-index: 1;
     left: -10%;
-    top: -40%;
+    top: -20%;
     width: 100%;
     height: 100%;
 }
 
 .modal-content {
     background-color: #F9F9F9;
-    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 300px;
     text-align: left;
     border-radius: 20px;
+    width: 90%;
+    margin: 10vh auto;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
 }
 }
