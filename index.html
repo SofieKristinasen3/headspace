@@ -74,10 +74,12 @@
   </div>
 
     <section id="hero">
-      <div>
+      <div id="hero_content"></div>
+      <div id="quiz_cover">
         <img src="img/coverpic.jpg" alt="">
         <h1>Opdag din måde at være frivillig på!</h1>
-        <button id="quiz_button">Tag quizzen</button>
+        <a href="#quiz"><button id="quiz_button">Tag quizzen</button></a>
+        <!-- <button id="quiz_button" onclick="startQuiz()">Tag quizzen</button> -->
       </div>
 
       <div id="quiz">
@@ -85,6 +87,8 @@
         <div id="answers"></div>
       </div>
     </section>
+
+    <hr>
 
     <section id="introduction">
       <h2>Hjælp os med at hjælpe unge</h2>
@@ -108,7 +112,7 @@
     <section id="gallery">
       <h2>Skal du være med?</h2>
     </section>
-    <hr />
+
       <!-- selve galleri billederne og link til javascripten -->
       <div>
         <button id=clickLeft onclick="show_image('left')">&lt;</button>
@@ -121,13 +125,11 @@
         <img id="right-image" />
       </div>
       
-
+<hr>
     <section id="events">
       <h2>Eventkalender</h2>
     </section>
-
-    <hr />
-
+<hr>
     <script src="txt_slide.js" defer></script>
     <section id="txt_slider"> 
       <h2>

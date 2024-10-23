@@ -8,6 +8,10 @@
  --mobile_padding: 5%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     min-height: 100vh;
     display: grid;
@@ -24,11 +28,8 @@ h1{
     font-weight: 700;
     font-size: 24px;
     color: var(--our_black);
-    position: absolute;
-    top: 2%;
-    left: 50%;
     text-align: center;
-    transform: translate(-50%);
+    padding: var(--mobile_padding);
 }
 
 h2{
@@ -50,6 +51,14 @@ p{
     letter-spacing: 1px;   
     color: var(--our_black);
 }
+
+hr {
+    border: 0;
+    display:block;
+    width: 100%;               
+    background-color: var(--dark_blue);
+    height: 1px;
+  }
 
 header{
     display: flex;
@@ -102,8 +111,15 @@ nav{
     display: none;
 }
 
-#hero{
+#quiz_cover{
     position: relative;
+    display: inline-block;
+}
+
+#hero_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero img{
@@ -112,22 +128,26 @@ nav{
     opacity: 40%;
 }
 
+#hero h1{
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
 #quiz_button{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: var(--mobile_padding);
+  position: absolute;
+  top: 70%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
 }
 
 #quiz{
     height: 100%;
     padding: var(--mobile_padding);
-    /* background-image: url(img/coverpic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(25%); */
-}
+    }
+
 
 #answers button{
 background-color: var(--background_white);
@@ -149,6 +169,7 @@ font-weight: 500;
     font-weight: 600;
     color: var(--dark_blue);
     font-size: 24px;
+    text-align: center;
 }
 
 #introduction{
@@ -182,7 +203,7 @@ font-weight: 500;
     flex-wrap: wrap;
 }
 
-img {
+#slideshow img {
     border-radius: 20px;
 }
 
@@ -272,10 +293,6 @@ input[type="text"], input[type="email"], select {
     h1{
         top: 20%;
         font-size: 40px;
-    }
-
-    #quiz_button{
-        top: 45%;
     }
     
 }
