@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Headspace Volunteering</title>
+    <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css" />
 
     <!-- Import af font, Gabarito & Abel -->
@@ -24,28 +24,21 @@
 
   <body>
     <header>
-      <img src="img/logo.png" alt="Headspace Volunteering" />
+      <script src="burger.js" defer></script>
       <nav>
-        <a href="about.html">Om os</a>
-        <a href="" id="calendar_icon"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-            height="40px"
-          >
-            <path
-               stroke-linecap="round" -->
-              stroke-linejoin="round"
-              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-            />
-          </svg>
-        </a>
-<button id="openModalBtn">Bliv Frivillig!</button>
-
+        <ul class="sidebar"> <!--nav for mobile-->
+          <li onclick=hidesidebar()><a href="index.html"><img src="img/close.svg" alt="close icon"></a></li>
+          <li><a href="about.html">Om os</a></li>
+          <li><button id="openModalBtn">Bliv Frivillig!</button></li>
+        </ul>
+        
+        <ul> <!--nav for computer-->
+          <li><a href="index.html"><img src="img/logo.svg" alt="Home"></a></li>
+          <li class="hide-on-mobile"><a href="about.html">Om os</a></li>
+          <li class="hide-on-mobile"><a href="#"><img src="img/calendar.svg" alt="calendar icon" id="calendar_icon"></a></li>
+          <li><button id="openModalBtn">Bliv Frivillig!</button></li>
+          <li class="menu-but" onclick=showsidebar()><a href ="#" ><img src="img/burger.svg" alt="menu icon"></a></li>
+        </ul>
       </nav>
     </header>
 
@@ -98,12 +91,11 @@
     </section>
 
     <section id="quotes">
-      <!--qoutes findes i javascripten-->
-      <div id="quote-1" class="quote-container"></div>
-      <div id="quote-2" class="quote-container"></div>
-      <div id="quote-3" class="quote-container"></div>
+      <h3>
+        " Headspace har virkelig givet mig modet tilbage, har fået de bedste
+        venner der "
+      </h3>
     </section>
-    <script src="quotes.js"></script>
 
     <section id="gallery">
       <h2>Skal du være med?</h2>

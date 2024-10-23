@@ -28,6 +28,8 @@ h1{
     top: 2%;
     left: 50%;
     text-align: center;
+    padding: var(--mobile_padding);
+    margin: 0px;
     transform: translate(-50%);
 }
 
@@ -60,7 +62,11 @@ header{
 
 header img{
 width: 50%;
-height: auto;
+
+}
+
+nav img{
+height: 100%;
 }
 
 header a{
@@ -93,13 +99,74 @@ button:hover{
 nav{
     padding: var(--mobile_padding);
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: center;
 
 }
 
-#calendar_icon{
+nav ul{ /*nav computer*/
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav li{
+    height: auto;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--our_black);
+}
+
+nav a:hover{
+    color:var( --medium_blue);
+}
+
+nav li:first-child{ /*logo left side*/
+    margin-right: auto;
+}
+
+.sidebar{ /*nav mobile*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 99999;
+    background-color: var(--background_white);
+    box-shadow: -10px 0 10px var(--dark_blue);
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+  
+.sidebar li:first-child{
+    margin-left: 65%;
+}
+  
+.sidebar a{
+    width: 100%;
+}
+  
+.menu-but{
+    display: none;
+}
+
+.nav-icon{
+    height: 40px;
 }
 
 #hero{
@@ -169,6 +236,11 @@ font-weight: 500;
 }
 
 /*event kalender*/
+/*Skal du være med slideshow med billeder */
+.slideshow {
+    display: flex;
+    flex-wrap: wrap;
+}
 #events{
     padding: var(--mobile_padding);
 }
@@ -260,9 +332,13 @@ input[type="text"], input[type="email"], select {
     #quiz_button{
         top: 45%;
     }
-    
 }
+
 @media screen and (min-width: 1000px){
+    :root{
+        --mobile_padding: 10%;
+    }
+        
     header img{
         width: 20%;
         height: auto;
@@ -279,8 +355,12 @@ input[type="text"], input[type="email"], select {
     }
 
     nav {
-        width: 25%;
+        width: 100%;
         justify-content: center;
+    }
+
+    #hero img{
+        width: 100%;
     }
 
     header{
@@ -291,8 +371,14 @@ input[type="text"], input[type="email"], select {
         font-size: 64px;
     }
 
-    :root{
-        --mobile_padding: 10%;
+    #hero button{
+        font-size: 24px;
+    }
+
+    
+
+    
+    
 }
 .modal {
     
@@ -314,4 +400,15 @@ input[type="text"], input[type="email"], select {
     text-align: left;
     border-radius: 20px;
 }
+
+@media(max-width:600px){
+    .hide-on-mobile{
+      display: none;
+    }
+    .menu-but{
+      display: block;
+    }
+    #calendar_icon{
+        display: none;
+    }
 }

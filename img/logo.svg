@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.76 158.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #077c9c;
+        font-family: Bahnschrift-Bold, Bahnschrift;
+        font-size: 56.72px;
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-5 {
+        fill: #77bc53;
+        font-family: SofiaProSoftBold, 'Sofia Pro Soft';
+        font-size: 112.34px;
+        letter-spacing: -.04em;
+        stroke: #77bc53;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer_2">
+    <text class="cls-5" transform="translate(1.5 96.65) scale(.98 1)"><tspan x="0" y="0">headspace</tspan></text>
+    <text class="cls-1" transform="translate(320.82 144.82) scale(1 .89)"><tspan class="cls-3" x="0" y="0">V</tspan><tspan class="cls-4" x="26.6" y="0">o</tspan><tspan class="cls-2" x="53.31" y="0">l</tspan><tspan class="cls-4" x="65.26" y="0">unteering</tspan></text>
+  </g>
+</svg>
