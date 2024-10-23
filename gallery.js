@@ -1,9 +1,10 @@
 var images = [
     'img/hs-two-girls.jpg',
     'img/hs-buckethat-girls.jpg',
+    'img/hs-haender.jpg',
     'img/hs-group-outside3.jpg',
-    
-
+    'img/hs-padel2.jpg',
+    'img/hs-frivillige-grin2.jpg'
   ];
   
   var index = 0;

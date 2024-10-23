@@ -168,6 +168,11 @@ font-weight: 500;
     display: flex;
     flex-wrap: wrap;
 }
+
+img {
+    border-radius: 20px;
+}
+
 #events{
     padding: var(--mobile_padding);
 }
