@@ -16,12 +16,24 @@ function startQuiz() {
 
 const quizData = [
     {
-      question: "What is the capital of France?",
-      answers: [{text: "Paris", value: 0},{text:"Madrid", value: 1}, {text:"London", value: 2}, {text:"Amsterdam", value: 3}],
+      question: "Hvor meget tid har du lyst til at bruge?",
+      answers: [{text: "2-4 timer om måneden", value: 0},{text:"4-6 timer om ugen", value: 1}, {text:"En enkelt dag", value: 2}, {text:"4-8 timer om måneden", value: 3}],
     },
     {
-      question: "What is the largest planet in our solar system?",
-      answers: [{text: "Paris", value: 0},{text:"Madrid", value: 1} ,{text:"London", value: 2}, {text:"Amsterdam", value: 3}],
+      question: "Hvad er din motivation for at hjælpe andre?",
+      answers: [{text: "At opbygge nye relationer med hvor du allerede findes", value: 0},{text:"At hjælpe den individuelle person", value: 1} ,{text:"At have det sjovt samtidig med at jeg ved det gør en forskel", value: 2}, {text:"At tage ansvar og skabe konkrete løsninger for et breder publikum", value: 3}],
+    },
+    {
+      question: "Hvad håber du at få ud af din tid hos headspace?",
+      answers: [{text: "Styrke min kreativitet og finde på nye idéer til online content", value: 0},{text:"At blive bedre til at lytte og bruge min empati ", value: 1} ,{text:"At holde mange bolde i luften og opbygge en stemning ", value: 2}, {text:"At præsentere foran mange mennesker og formidle et budskab", value: 3}],
+    },
+    {
+      question: "Hvordan har du det med at tale med andre?",
+      answers: [{text: "Jeg foretrækker at arbejde i mindre teams", value: 0},{text:"Det kommer naturligt for mig, og jeg kan godt lide at fordybe mig i samtaler", value: 1} ,{text:"Jeg kan godt lide at tale med mange forskellige mennesker på en aften", value: 2}, {text:"Jeg kan godt lide at tale foran mange mennesker og præsentere foran andre", value: 3}],
+    },
+    {
+      question: "Hvad gør dig mest glad?",
+      answers: [{text: "At finde på nye idéer og være kreativ", value: 0},{text:"At tale med andre om følelser og oplevelser", value: 1} ,{text:"At være med til større events og være en del af stemningen", value: 2}, {text:"At fortælle om et emne jeg er passioneret omkring", value: 3}],
     },
   ];
   const quizResults = ["det er nummer 1", "det er nummer to", "det er nummer tre", "det er nummer 4"
