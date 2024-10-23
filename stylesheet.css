@@ -30,6 +30,7 @@ h1{
     color: var(--our_black);
     text-align: center;
     padding: var(--mobile_padding);
+    margin: 0px;
 }
 
 h2{
@@ -320,7 +321,13 @@ input[type="text"], input[type="email"], select {
     }
     
 }
+
+
 @media screen and (min-width: 1000px){
+    :root{
+        --mobile_padding: 10%;
+    }
+        
     header img{
         width: 20%;
         height: auto;
@@ -341,6 +348,10 @@ input[type="text"], input[type="email"], select {
         justify-content: center;
     }
 
+    #hero img{
+        width: 100%;
+    }
+
     header{
         justify-content: space-between;
     }
@@ -349,8 +360,14 @@ input[type="text"], input[type="email"], select {
         font-size: 64px;
     }
 
-    :root{
-        --mobile_padding: 10%;
+    #hero button{
+        font-size: 24px;
+    }
+
+    
+
+    
+    
 }
 .modal {
     
@@ -374,5 +391,4 @@ input[type="text"], input[type="email"], select {
     max-width: 400px;
     position: relative;
     z-index: 2;
-}
 }
