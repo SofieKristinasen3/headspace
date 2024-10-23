@@ -158,34 +158,17 @@ font-weight: 500;
 #quotes{
     padding: var(--mobile_padding);
     background-color: var(--dark_blue);
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-
-.quote-container {
-    color: var(--background_white);
-    font-family: gabarito, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    flex: 1;
-    margin: 0 100px;
-    transition: opacity 0.7s ease-in-out;
 }
 
 #gallery{
     padding: var(--mobile_padding);
 }
-/*Skal du være med slideshow med billeder */
-.slideshow {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-img {
+/*Skal du være med? slideshow med billeder */
+#slideshow img {
     border-radius: 20px;
 }
 
+/*event kalender*/
 #events{
     padding: var(--mobile_padding);
 }
