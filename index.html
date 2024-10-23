@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Headspace Volunteering</title>
     <link rel="stylesheet" href="stylesheet.css" />
 
     <!-- Import af font, Gabarito & Abel -->
@@ -74,10 +74,12 @@
   </div>
 
     <section id="hero">
-      <div>
+      <div id="hero_content"></div>
+      <div id="quiz_cover">
         <img src="img/coverpic.jpg" alt="">
         <h1>Opdag din måde at være frivillig på!</h1>
-        <button id="quiz_button">Tag quizzen</button>
+        <a href="#quiz"><button id="quiz_button">Tag quizzen</button></a>
+        <!-- <button id="quiz_button" onclick="startQuiz()">Tag quizzen</button> -->
       </div>
 
       <div id="quiz">
@@ -85,6 +87,8 @@
         <div id="answers"></div>
       </div>
     </section>
+
+    <hr>
 
     <section id="introduction">
       <h2>Hjælp os med at hjælpe unge</h2>
@@ -98,16 +102,17 @@
     </section>
 
     <section id="quotes">
-      <h3>
-        " Headspace har virkelig givet mig modet tilbage, har fået de bedste
-        venner der "
-      </h3>
+      <!--quotes findes i javascripten-->
+      <div id="quote-1" class="quote-container"></div>
+      <div id="quote-2" class="quote-container"></div>
+      <div id="quote-3" class="quote-container"></div>
     </section>
+    <script src="quotes.js"></script>
 
     <section id="gallery">
       <h2>Skal du være med?</h2>
     </section>
-    <hr />
+
       <!-- selve galleri billederne og link til javascripten -->
       <div>
         <button id=clickLeft onclick="show_image('left')">&lt;</button>
@@ -120,13 +125,11 @@
         <img id="right-image" />
       </div>
       
-
+<hr>
     <section id="events">
       <h2>Eventkalender</h2>
     </section>
-
-    <hr />
-
+<hr>
     <script src="txt_slide.js" defer></script>
     <section id="txt_slider"> 
       <h2>
