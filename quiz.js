@@ -1,13 +1,6 @@
 //Array med spørgsmål, samt array indeni for de forskellige svarmuligheder. 
 
-// a=1;
-// b="text";
-// c=[1,2,3];
-// c2={0:1,1:2,2:3};
-// d=c[0];
-// e={text: "noget tekst", i:42, f:[[g,h],2,3]};
-// g=e.text;
-// h=e.f[0][0];
+// Quiz funktion, Sofie
 
 function startQuiz() { 
 	document.getElementById("hero_cover").style.display="none"; 
@@ -114,7 +107,7 @@ const quizData = [
     quiz.innerHTML = 
     `
       <p> <b>Du passer godt som</b> ${quizResults[maxIndex]}</p>
-      
+      <button id="openModalBtn">Bliv Frivillig!</button>
     `;
   }
   
