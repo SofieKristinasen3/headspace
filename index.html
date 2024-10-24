@@ -103,17 +103,22 @@
     </section>
     <hr />
       <!-- selve galleri billederne og link til javascripten -->
-      <div>
-        <button id=clickLeft onclick="show_image('left')">&lt;</button>
-        <button id=clickRight onclick="show_image('right')">&gt;</button>
+  <script src="gallery.js" defer></script>
+
+    <div id="slideshow-container">
+      <div id="leftClickContainer" class="slideshowArrows">
+        <button id="clickLeft" onclick="show_image('left')">&lt;</button>
       </div>
-      <script src="gallery.js" defer></script>
-      <div id="slideshow">
-        <img id="left-image" />
-        <img id="main-image" />
-        <img id="right-image" />
-      </div>
-      
+        <div id="slideshow">
+          <img id="left-image" class="hide-on-mobile">
+          <img id="main-image" >
+          <img id="right-image" class="hide-on-mobile"/>
+        </div>
+        <div id="rightClickContainer" class="slideshowArrows">
+          <button id="clickRight" onclick="show_image('right')">&gt;</button>
+        </div>
+    </div>
+     
 
     <section id="events">
       <h2>Eventkalender</h2>

@@ -266,12 +266,41 @@ font-weight: 500;
     border-radius: 20px;
 }
 
-/*event kalender*/
-/*Skal du være med slideshow med billeder */
-.slideshow {
+#slideshow-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+#slideshow {
+    display: flex;
+    gap: 50px;
+}
+
+#leftClickContainer {
+    margin: 25px 5px 25px 15px;
+}
+
+#rightClickContainer {
+    margin: 25px 30px 25px 5px;
+}
+
+#clickRight {
+    height: 60px;
+    margin: 25px;
+    padding: 25px;
+    cursor: pointer;
+}
+
+#clickLeft {
+    height: 60px;
+    margin: 25px 25px 25px 25px;
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+/*event kalender*/
 #events{
     padding: var(--mobile_padding);
 }
