@@ -230,16 +230,15 @@ font-weight: 500;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    max-height: 70px;
+    max-height: 70px; /* Hvis du vil, må du gerne lege med boksens størrelse og gøre den mere slim.. help. */
 }
 
 .quote-container {
     color: var(--background_white);
-    font-weight: 500;
     font-family: gabarito, sans-serif;
     font-weight: 700;
     font-size: 24px;
-    max-width: 400px;
+    max-width: 400px; /* Er til teksten og ikke boksen */
     min-height: 100px;
     margin: 0 60px;
     flex: 1;
@@ -249,12 +248,19 @@ font-weight: 500;
 @media (max-width: 600px) {
     #quotes {
         flex-direction: column;
+        align-items: center;
+        padding: var(--mobile_padding);
+        max-height: 60px; /* Mobil boks størrelse */
     }
 
     .quote-container {
-        max-width: 90%;
+        max-width: 90%; /* Er til teksten og ikke boksen */
         font-size: 18px;
         margin: auto;
+    }
+
+    #quote-2, #quote-3 {
+        display: none; /* Gemmer ekstra quotes */
     }
 }
 
