@@ -56,12 +56,12 @@ p{
 header{
     display: flex;
     align-items: center;
-    position: sticky;
-
+    padding: var(--mobile_padding);
 }
 
 header img{
 width: 50%;
+padding-right: 10px;
 
 }
 
@@ -69,14 +69,6 @@ nav img{
 height: 100%;
 }
 
-header a{
-    display: none;
-    color: var(--our_black);
-    text-decoration: none;
-    font-family: abel;
-    letter-spacing: 1px;
-    width: 100%;
-}
 
 button{
     border: none;
@@ -97,77 +89,26 @@ button:hover{
 }
 
 nav{
-    padding: var(--mobile_padding);
     display: flex;
     width: 100%;
     align-items: center;
-
-}
-
-nav ul{ /*nav computer*/
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-}
-
-nav li{
-    height: auto;
+    justify-content: space-between;
 }
 
 nav a{
     height: 100%;
-    padding: 0 15px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     color: var(--our_black);
+    text-decoration: none;
+    font-family: abel;
+    letter-spacing: 1px;
+    width: 100%;
 }
 
 nav a:hover{
     color:var( --medium_blue);
 }
 
-nav li:first-child{ /*logo left side*/
-    margin-right: auto;
-}
-
-.sidebar{ /*nav mobile*/
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    z-index: 99999;
-    background-color: var(--background_white);
-    box-shadow: -10px 0 10px var(--dark_blue);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.sidebar li{
-    width: 100%;
-}
-  
-.sidebar li:first-child{
-    margin-left: 65%;
-}
-  
-.sidebar a{
-    width: 100%;
-}
-  
-.menu-but{
-    display: none;
-}
-
-.nav-icon{
-    height: 40px;
-}
 
 #hero{
     position: relative;
@@ -238,9 +179,8 @@ font-weight: 500;
     font-family: gabarito, sans-serif;
     font-weight: 700;
     font-size: 24px;
-    max-width: 400px; /* Er til teksten og ikke boksen */
+    max-width: 400px; /*Er til teksten og ikke boksen*/
     min-height: 100px;
-    margin: 0 60px;
     flex: 1;
     transition: opacity 0.7s ease-in-out;
 }
@@ -256,7 +196,6 @@ font-weight: 500;
     .quote-container {
         max-width: 90%; /* Er til teksten og ikke boksen */
         font-size: 18px;
-        margin: auto;
     }
 
     #quote-2, #quote-3 {
@@ -267,9 +206,14 @@ font-weight: 500;
 #gallery{
     padding: var(--mobile_padding);
 }
+
+
+
 /*Skal du være med? slideshow med billeder */
 #slideshow img {
     border-radius: 20px;
+    max-width: 30%;
+    
 }
 
 #slideshow-container {
@@ -278,29 +222,26 @@ font-weight: 500;
     align-items: center;
 }
 
+
 #slideshow {
     display: flex;
-    gap: 50px;
+    gap: var(--mobile_padding);
 }
 
-#leftClickContainer {
-    margin: 25px 5px 25px 15px;
+/* #leftClickContainer {
 }
 
 #rightClickContainer {
-    margin: 25px 30px 25px 5px;
-}
+} */
 
 #clickRight {
     height: 60px;
-    margin: 25px;
     padding: 25px;
     cursor: pointer;
 }
 
 #clickLeft {
     height: 60px;
-    margin: 25px 25px 25px 25px;
     padding: 25px;
     cursor: pointer;
 }
@@ -344,7 +285,7 @@ footer a{
 }
 
 .modal-content {
-    background-color: #F9F9F9;
+    background-color: var(--background_white);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -354,7 +295,7 @@ footer a{
 }
 
 .close {
-    color: #077C9C;
+    color: var(--medium_blue);
     float: right;
     font-size: 24px;
     font-weight: bold;
@@ -362,7 +303,7 @@ footer a{
 
 .close:hover,
 .close:focus {
-    color: #054657;
+    color: var(--light_blue);
     text-decoration: none;
     cursor: pointer;
 }
@@ -372,13 +313,13 @@ input[type="text"], input[type="email"], select {
     padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
-    outline-color: #077C9C;
+    outline-color: var(--dark_blue);
     border-radius: 10px;
 }
 
 .submit-btn {
-    background-color: #077C9C;
-    color: #F9F9F9;
+    background-color: var(--dark_blue);
+    color: var(--background_white);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -386,7 +327,8 @@ input[type="text"], input[type="email"], select {
 }
 
 .submit-btn:hover {
-    background-color: #054657;
+    background-color: var(--light_blue);
+    color: var(--our_black);
 }
 /* tablet version */
 @media  screen and (min-width: 600px){
@@ -402,22 +344,12 @@ input[type="text"], input[type="email"], select {
 
 @media screen and (min-width: 1000px){
     :root{
-        --mobile_padding: 10%;
-    }
-        
-    header img{
-        width: 20%;
-        height: auto;
-        object-fit: scale-down;
+        --mobile_padding: 8%;
     }
 
     #calendar_icon{
         display: block;
 
-    }
-
-    header a{
-        display: block;
     }
 
     nav {
@@ -428,10 +360,6 @@ input[type="text"], input[type="email"], select {
     #hero img{
         width: 100%;
     }
-
-    header{
-        justify-content: space-between;
-    }
     
     h1{
         font-size: 64px;
@@ -440,12 +368,19 @@ input[type="text"], input[type="email"], select {
     #hero button{
         font-size: 24px;
     }
-
-    
-
-    
     
 }
+
+@media(max-width:600px){
+    .hide-on-mobile{
+        display:none;
+    }
+    #slideshow img{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
 .modal {
     
     display: none;
@@ -458,23 +393,11 @@ input[type="text"], input[type="email"], select {
 }
 
 .modal-content {
-    background-color: #F9F9F9;
+    background-color: var(--background_white);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 300px;
     text-align: left;
     border-radius: 20px;
-}
-
-@media(max-width:600px){
-    .hide-on-mobile{
-      display: none;
-    }
-    .menu-but{
-      display: block;
-    }
-    #calendar_icon{
-        display: none;
-    }
 }
