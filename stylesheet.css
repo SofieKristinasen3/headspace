@@ -125,7 +125,7 @@ nav a:hover{
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: var(--mobile_padding);
+  margin: auto;
 }
 
 #quiz{
@@ -228,19 +228,16 @@ font-weight: 500;
     gap: var(--mobile_padding);
 }
 
-/* #leftClickContainer {
-}
-
-#rightClickContainer {
-} */
 
 #clickRight {
+    background-color: var(--background_white);
     height: 60px;
     padding: 25px;
     cursor: pointer;
 }
 
 #clickLeft {
+    background-color: var(--background_white);
     height: 60px;
     padding: 25px;
     cursor: pointer;
@@ -250,6 +247,11 @@ font-weight: 500;
 /*event kalender*/
 #events{
     padding: var(--mobile_padding);
+}
+
+#calendar_img{
+    display: flex;
+    justify-content: center;
 }
 
 #txt_slider{
@@ -368,12 +370,15 @@ input[type="text"], input[type="email"], select {
     #hero button{
         font-size: 24px;
     }
+    .hide-on-computer{
+        display: none;
+    }
     
 }
 
 @media(max-width:600px){
     .hide-on-mobile{
-        display:none;
+        display: none;
     }
     #slideshow img{
         max-width: 90%;
