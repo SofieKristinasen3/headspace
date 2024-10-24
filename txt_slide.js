@@ -12,7 +12,7 @@ const phrases = ['Vær med i et fællesskab!', 'Vær med til at gøre noget godt
 const el = document.getElementById('typewriter')
           
 /* bruger let til at deklare, SleepTimes bruges som ventid/forsinkelse mellem steps*/
-let sleepTime = 120
+let sleepTime = 70
         
 /*det nummer i array'et, som loop kommer til at starte på */
 let curPhraseIndex = 0
