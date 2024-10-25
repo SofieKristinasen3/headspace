@@ -30,10 +30,10 @@ const quizData = [
     },
   ];
   const quizResults = [
-    "SoMe coordinator! Arbejdet med sociale medier er lige noget for dig, fordi du elsker at skabe nye relationer og netværke med forskellige mennesker. Du trives i samarbejde med andre, og du nyder at være kreativ, både når det gælder indhold og idéer. At tænke ud af boksen og finde på nye måder at engagere folk på, er noget, der virkelig motiverer dig.",
-    "ungerådgiver! Du brænder for at hjælpe andre på et personligt plan og sætter pris på ægte øjenkontakt, fordi du er god til at sætte dig i andres sted. Din følsomhed gør det nemt for folk at åbne op for dig, og de føler sig hurtigt set og forstået i din tilstedeværelse",
-    "events coordinator! Du elsker at være omkring mange forskellige mennesker og trives i et dynamisk miljø med flere ting i gang samtidig. At kunne gøre en forskel, mens du skaber sjove og mindeværdige oplevelser for andre, er det, der gør dig til en dygtig eventkoordinator. For dig handler det om at kombinere glæde med overblik og skabe noget særligt ", 
-    "formidler! Du er passioneret og elsker at dele din entusiasme med andre. Du er ikke bange for at tage ansvar, og du trives med at stå foran mange mennesker og fortælle om det, du brænder for. At formidle dine idéer og inspirere andre er noget, der virkelig motiverer dig. "
+    "SoMe coordinator! <br> Arbejdet med sociale medier er lige noget for dig, fordi du elsker at skabe nye relationer og netværke med forskellige mennesker. <br> Du trives i samarbejde med andre, og du nyder at være kreativ, både når det gælder indhold og idéer. <br> At tænke ud af boksen og finde på nye måder at engagere folk på, er noget, der virkelig motiverer dig.",
+    "ungerådgiver! <br> Du brænder for at hjælpe andre på et personligt plan og sætter pris på ægte øjenkontakt, fordi du er god til at sætte dig i andres sted. <br> Din følsomhed gør det nemt for folk at åbne op for dig, og de føler sig hurtigt set og forstået i din tilstedeværelse",
+    "events coordinator! <br>  Du elsker at være omkring mange forskellige mennesker og trives i et dynamisk miljø med flere ting i gang samtidig. <br> At kunne gøre en forskel, mens du skaber sjove og mindeværdige oplevelser for andre, er det, der gør dig til en dygtig eventkoordinator. <br> For dig handler det om at kombinere glæde med overblik og skabe noget særligt ", 
+    "formidler! <br> Du er passioneret og elsker at dele din entusiasme med andre.<br>  Du er ikke bange for at tage ansvar, og du trives med at stå foran mange mennesker og fortælle om det, du brænder for. <br>  At formidle dine idéer og inspirere andre er noget, der virkelig motiverer dig. "
   ];
 
   //Tager fat i HTML elementer 
@@ -106,7 +106,7 @@ const quizData = [
 
     quiz.innerHTML = 
     `
-      <p> <b>Du passer godt som</b> ${quizResults[maxIndex]}</p>
+      <p class="quiz_result"> <b>Du passer godt som</b> ${quizResults[maxIndex]} </p>
       <button id="openModalBtn">Bliv Frivillig!</button>
     `;
   }

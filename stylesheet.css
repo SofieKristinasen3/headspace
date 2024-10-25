@@ -332,6 +332,9 @@ input[type="text"], input[type="email"], select {
     margin: auto;
 }
 
+hr{
+    border: 1px solid var(--dark_blue);
+}
 
 .modal {
     
@@ -354,9 +357,22 @@ input[type="text"], input[type="email"], select {
     border-radius: 20px;
 }
 
+.quiz_result{
+    font-size: 24px;
+}
 
 
 @media screen and (min-width: 600px){
+
+
+    #clickRight{
+        height: 100%;
+    }
+
+    #clickLeft{
+        height: 100%;
+    }
+
     #calendar_button{
         height: 50px;
     }
