@@ -29,7 +29,7 @@ body{
 h1{
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
     color: var(--our_black);
     position: absolute;
     top: 2%;
@@ -131,7 +131,7 @@ nav a:hover{
 
 #quiz_button{
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
@@ -181,7 +181,7 @@ font-weight: 500;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 250px;
 }
 
 .quote-container {
@@ -206,7 +206,7 @@ font-weight: 500;
 /*Skal du være med? slideshow med billeder */
  #slideshow img {
     max-width: 30%;
-    
+    border-radius: 20px;
 }
 
 #slideshow-container {
@@ -326,11 +326,15 @@ input[type="text"], input[type="email"], select {
 .type_text{
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 1.5rem;
     color: var(--medium_blue);
     text-align: center;
     padding: var(--mobile_padding);
     margin: auto;
+}
+
+#txt_slider{
+    height: 100px;
 }
 
 hr{
@@ -374,10 +378,6 @@ hr{
         height: 100%;
     }
 
-    #calendar_button{
-        height: 50px;
-    }
-
     h1{
         font-size: 4rem;
     }
@@ -397,9 +397,9 @@ hr{
         width: 90%;
     }
 
-    #hero img{
+    #hero_img{
         width: 100%;
-        height: 30%;
+        height: 15%;
         object-fit: cover;
     }
 
@@ -409,12 +409,33 @@ hr{
 
     header{
         align-content: space-between;
+        justify-content: flex-end;
+        display: block;
+        position: relative;
+    }
+
+    #logo{
+        width: 12%;
+    }
+
+    #calendar_button{
+        height: 50px;
     }
 
     nav{
         align-items: center;
         width: 20%;
+        position: absolute;
+        right: var(--mobile_padding);
+        top: 10%;
+    }
 
+    #txt_slider{
+        height: 200px;
+    }
+
+    .type_text{
+        font-size: 4rem;
     }
 
 }
