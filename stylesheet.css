@@ -274,11 +274,10 @@ footer a{
     display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     margin: var(--mobile_padding);
+    top: -20%;
 }
 
 .modal-content {
@@ -344,18 +343,6 @@ input[type="text"], input[type="email"], select {
 
 hr{
     border: 1px solid var(--dark_blue);
-}
-
-
-.modal {
-    
-    display: none;
-    position: fixed;
-    z-index: 2;
-    left: -10%;
-    top: -40%;
-    width: 100%;
-    height: 100%;
 }
 
 .modal-content {
