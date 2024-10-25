@@ -81,12 +81,13 @@ height: 100%;
 button{
     border: none;
     background-color: var(--medium_blue);
-    height: 64px;
+    height: 40px;
     color: var(--background_white);
     font-family: abel;
     letter-spacing: 1px;
     font-weight: 700;
     border-radius: 20px;
+    padding: 0px 30px;
 }
 
 button:hover{
