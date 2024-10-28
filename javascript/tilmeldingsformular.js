@@ -20,16 +20,16 @@ window.onclick = function(event) {
 }
 
 function populateDropdown() {
-    const dropdown = document.getElementById("volunteer");
+    let dropdown = document.getElementById("volunteer");
 
     dropdown.innerHTML = "";
 
-    volunteerRoles.forEach(function(role) {
+    for (let i = 0; i < volunteerRoles.length; i++) {
         let option = document.createElement("option");
-        option.value = role.toLowerCase(); // Brug små bogstaver som værdien
-        option.text = role; // Sæt teksten som vises
+        option.value = volunteerRoles[i].toLowerCase();
+        option.text = volunteerRoles[i];
         dropdown.appendChild(option);
-    });
+    };
 }
 
 function submitForm() {
