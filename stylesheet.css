@@ -29,7 +29,7 @@ body{
 h1{
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--our_black);
     position: absolute;
     top: 2%;
@@ -44,20 +44,21 @@ h2{
     font-family: gabarito, sans-serif;
     font-weight: 600;
     color: var(--medium_blue);
-    font-size: 24px;
-
+    font-size: 1.5rem;
 }
 
 h3{
     font-family: gabarito, sans-serif;
     font-weight: 500;
-    color: var(--background_white);
+    color: var(--our_black);
+    font-size: 1.3rem;
 }
 
 p{
     font-family: abel, sans-serif;
     letter-spacing: 1px;   
     color: var(--our_black);
+    font-size: 1rem;
 }
 
 header{
@@ -65,7 +66,7 @@ header{
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 
 header img{
@@ -82,7 +83,6 @@ height: 100%;
 height: 110%;
 }
 
-
 button{
     border: none;
     background-color: var(--medium_blue);
@@ -92,14 +92,16 @@ button{
     letter-spacing: 1px;
     font-weight: 700;
     border-radius: 20px;
-    padding: 0px 30px;
+    padding: 10px 60px;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
 }
 
 button:hover{
     background-color: var(--light_blue);
     color: var(--our_black);
 }
-
 
 nav{
     display: flex;
@@ -136,7 +138,7 @@ nav a:hover{
 
 #quiz_button{
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
@@ -153,6 +155,7 @@ background-color: var(--background_white);
 border: 2px solid var(--medium_blue);
 color: var(--our_black);
 font-weight: 500;
+height: auto;
 }
 
 #answers{
@@ -193,7 +196,7 @@ font-weight: 500;
     color: var(--background_white);
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5;
     max-width: 400px; /*Er til teksten og ikke boksen*/
     min-height: 100px;
     flex: 1;
@@ -255,7 +258,7 @@ font-weight: 500;
 
 footer{
     min-height: 50px;
-    padding: var(--mobile_padding);
+    padding: 0px var(--mobile_padding);
     background-color: var(--dark_blue);
     color: var(--background_white);
 }
@@ -359,8 +362,29 @@ hr{
     font-size: 24px;
 }
 
-@media screen and (min-width: 600px){
-    
+#about_cover{
+position: relative;
+height: 60vh;
+}
+
+#about_img{
+    height: 60vh;
+    width: 100%;
+    opacity: 40%;
+    object-fit: cover;
+}
+
+#about_title{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+
+#about_text{
+    padding: var(--mobile_padding);
+}
+
+@media screen and (min-width: 600px){    
     #clickRight{
         height: 100%;
     }
@@ -374,11 +398,13 @@ hr{
     }
 
     #quiz_button{
-        font-size: 24px;
+        font-size: 1.5rem;
         height: 60px;
-        top: 10%;
     }
 
+    #answers button{
+        height: 40px;
+    }
     
     .hide-on-computer{
         display: none;
@@ -419,7 +445,7 @@ hr{
     }
 
     #txt_slider{
-        height: 250px;
+        height: 125px;
     }
 
     .type_text{
@@ -430,6 +456,7 @@ hr{
         display: flex;
         width: 100%;
         justify-content: space-around;
+        padding: var(--mobile_padding);
     }
 
 }

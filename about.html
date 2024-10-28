@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Om os</title>
     <!-- Import af font, Gabarito & Abel -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,23 +27,59 @@
       /></a>
       <nav>
         <a href="about.html">Om os</a>
-        <a href="#events">
+        <a href="index.html">
           <img src="img/calendar.svg" alt="Kalender knap" id="calendar_button"
         /></a>
-        <button id="openModalBtn">Bliv Frivillig!</button>
+        <button id="openModalBtn">Tilmeld dig!</button>
       </nav>
     </header>
 
-    <section id="hero">
-      <div>
-        <img src="img/coverpic.jpg" alt="" />
-        <h1>Om os</h1>
+    <!-- Tilmeldings Popup -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Tilmeld dig som frivillig</h2>
+        <form id="signupForm">
+          <label for="fname">Fornavn:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Dit fornavn"
+          />
+
+          <label for="lname">Efternavn:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Dit efternavn"
+          />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Din email" />
+
+          <label for="volunteer">Valg af frivilligt arbejde:</label>
+          <select id="volunteer" name="volunteer"></select>
+
+          <button type="button" class="submit-btn" onclick="submitForm()">
+            Tilmeld
+          </button>
+        </form>
       </div>
+    </div>
+    <section id="hero">
+
+    <section id="about_cover">
+      <div>
+        <img src="img/headspace_about.jpg" alt="" id="about_img" />
+      </div>
+      <h1 id="about_title">Om os</h1>
     </section>
 
-    <section id="introduction">
+    <section id="about_text">
       <h2>
-        Bliv frivillig og hjælp os med at skabe et rum for ærlige samtaler.
+        Bliv frivillig og hjælp os med at skabe et rum for ærlige samtaler
       </h2>
       <p>
         headspace Volunteering er en del af headspace, der fokuserer på
@@ -67,10 +103,10 @@
         mennesker, vil sprede budskabet om headspace, eller ønsker at hjælpe med
         det praktiske.
       </p>
-      <h2>
+      <h3>
         "Bliv en del af headspace-fællesskabet, hvor dine tanker bliver hørt, og
         hvor du kan hjælpe andre med at finde deres stemme."
-      </h2>
+      </h3>
       <p>
         Hos headspace kan du være med til at gøre en betydelig forskel for unge,
         der står over for forskellige udfordringer. Du kan hjælpe dem med at
@@ -80,8 +116,8 @@
         løbende sparring og støtte fra vores ansatte, så du føler dig godt
         rustet til dine opgaver.
       </p>
-      <h2>Frivilliges arbejdsopgaver hos headspace:</h2>
-      <h2>SoMe-koordinator</h2>
+      <h2>Frivilliges arbejdsopgaver hos headspace</h2>
+      <h3>SoMe-koordinator</h3>
       <p>
         Arbejdet med sociale medier er for dig, der elsker at skabe nye
         relationer og netværk. Du trives med at samarbejde med andre og nyder at
@@ -89,21 +125,21 @@
         af boksen og finde nye måder at engagere folk på, vil dette være noget
         for dig.
       </p>
-      <h2>Ungerådgiver</h2>
+      <h3>Ungerådgiver</h3>
       <p>
         Hvis du brænder for at hjælpe andre på et personligt plan og sætter pris
         på ægte øjenkontakt, er ungerådgivning noget for dig. Du har en naturlig
         evne til at sætte dig i andres sted, og folk føler sig hurtigt set og
         forstået i din tilstedeværelse.
       </p>
-      <h2>Eventkoordinator</h2>
+      <h3>Eventkoordinator</h3>
       <p>
         Dette er for dig, der elsker at være omkring mange forskellige mennesker
         og trives i et dynamisk miljø, hvor flere ting foregår på én gang. Du
         motiveres af at skabe sjove og mindeværdige oplevelser for andre, mens
         du bevarer overblikket og glæden ved at organisere noget særligt.
       </p>
-      <h2>Formidler</h2>
+      <h3>Formidler</h3>
       <p>
         Er du passioneret og elsker at dele din entusiasme med andre, så er
         denne rolle for dig. Du er ikke bange for at tage ansvar og trives med
@@ -113,22 +149,28 @@
     </section>
 
     <footer>
-      <p>
-        <b>Headspace sekretariat</b>
-      </p>
-      <p>Østergade 5, 3. sal 1100 København K</p>
-      <br />
-      <p><b>Kontakt os</b></p>
-      <p>Bliv frivillig</p>
-      <p>
-        <a href="mailto:info@detsocialenetvaerk.dk"
-          >info@detsocialenetvaerk.dk</a
-        >
-      </p>
-      <p><a href="mailto:info@headspace.dk">info@headspace.dk</a></p>
-      <p><a href="tel:+4550846846">+45 50 84 68 46</a></p>
-      <br />
-      <div id="insta_link">
+      <div id="footer_txt_1">
+        <p>
+          <b>headspace sekretariat</b>
+        </p>
+        <p>Østergade 5, 3. sal <br />1100 København K</p>
+        <br />
+      </div>
+
+      <div id="footer_txt_2">
+        <p><b>Kontakt os</b></p>
+        <p>
+          <a href="mailto:info@detsocialenetvaerk.dk"
+            >info@detsocialenetvaerk.dk</a
+          >
+        </p>
+        <p><a href="mailto:info@headspace.dk">info@headspace.dk</a></p>
+        <p><a href="tel:+4550846846">+45 50 84 68 46</a></p>
+        <br />
+        <div id="insta_link"></div>
+      </div>
+
+      <div id="footer_txt_3">
         <p><b>Sociale medier</b></p>
         <br />
         <a href="https://www.instagram.com/headspacedanmark/">
@@ -152,5 +194,6 @@
         </a>
       </div>
     </footer>
+    <script src="javascript/tilmeldingsformular.js"></script>
   </body>
 </html>
