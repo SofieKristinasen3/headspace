@@ -270,7 +270,6 @@ footer a{
 }
 /* tilmeldingsformular */
 .modal {
-    
     display: none;
     position: fixed;
     z-index: 1;

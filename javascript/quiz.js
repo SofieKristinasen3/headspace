@@ -119,7 +119,6 @@ såsom hvilken button der er blevet trykket på i dette tilfælde.*/
       button.onclick = function() {
         modal.style.display = "block";
         populateDropdown(); // Sørg for at drop-down bliver fyldt
+      }
     }
-  }
-  
-  showQuestion();
+    showQuestion();
