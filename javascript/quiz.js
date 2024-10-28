@@ -13,7 +13,7 @@ const quizData = [
     },
     {
       question: "Hvad er din motivation for at hjælpe andre?",
-      answers: [{text: "At opbygge nye relationer med hvor du allerede findes", category: 0},{text:"At hjælpe den individuelle person", category: 1} ,{text:"At have det sjovt samtidig med at jeg ved det gør en forskel", category: 2}, {text:"At tage ansvar og skabe konkrete løsninger for et breder publikum", category: 3}],
+      answers: [{text: "At opbygge nye relationer", category: 0},{text:"At hjælpe den individuelle person", category: 1} ,{text:"At have det sjovt samtidig med at jeg ved, at det gør en forskel", category: 2}, {text:"At tage ansvar og skabe konkrete løsninger for et breder publikum", category: 3}],
     },
     {
       question: "Hvad håber du at få ud af din tid hos headspace?",
