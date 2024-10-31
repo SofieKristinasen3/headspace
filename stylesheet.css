@@ -196,7 +196,7 @@ height: auto;
     color: var(--background_white);
     font-family: gabarito, sans-serif;
     font-weight: 700;
-    font-size: 1.5;
+    font-size: 1.5rem;
     max-width: 400px; /*Er til teksten og ikke boksen*/
     min-height: 100px;
     flex: 1;
